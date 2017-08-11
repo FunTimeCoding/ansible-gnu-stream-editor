@@ -1,2 +1,4 @@
 ---
-# tasks file for ansible-gnu-stream-editor
+- homebrew:
+    name: gnu-sed
+  when: ansible_system == 'Darwin'
